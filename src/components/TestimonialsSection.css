@@ -1,0 +1,18 @@
+.testimonials-section {
+  padding: 40px 20px;
+  background-color: #495e57;
+  text-align: center;
+}
+
+.testimonials-section h2 {
+  font-size: 2rem;
+  color: #f8f8f8;
+  margin-bottom: 20px;
+}
+
+.testimonials-cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}

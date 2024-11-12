@@ -1,0 +1,64 @@
+.home {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  padding-top: 35px;
+  text-align: center;
+  background-color: #495e57;
+}
+
+.home .container {
+  gap: 3.5rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.home-text {
+  grid-column: 1;
+  text-align: left;
+  padding: 2rem;
+}
+
+.home-text h1 {
+  font-size: 2.5rem;
+  color: #f4ce14;
+  margin-bottom: 0.1rem;
+}
+
+.home-text h2 {
+  color: #ffffff;
+  font-size: 2.25rem;
+  height: 2.25rem;
+}
+
+.home-text p {
+  font-size: 1rem;
+  color: #ffffff;
+  margin-top: 2rem;
+}
+
+.home-text .button-primary {
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+.home-text .button-primary:hover,
+.home-text .button-primary:focus {
+  border-color: #f4ce14;
+}
+
+.home-image {
+  grid-column: 2;
+  width: 100%;
+  height: 24rem;
+  margin-bottom: -2.3rem;
+  justify-self: end;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+.dish-cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
