@@ -21,6 +21,7 @@ function Reservation() {
   const [state, dispatch] = useReducer(reducer, initialState);
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
+  const [email, setEmail] = useState("");
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
   const [people, setPeople] = useState("");
@@ -33,7 +34,19 @@ function Reservation() {
   useEffect(() => {
     const now = new Date();
     const currentDate = now.toISOString().split("T")[0];
+    const currentHour = now.getHours();
+    const currentMinute = now.getMinutes();
+
+    let adjustedHour;
+    if (currentHour < 10 || currentHour >= 21) {
+      adjustedHour = 10;
+    } else {
+      adjustedHour = currentMinute > 0 ? currentHour + 1 : currentHour;
+    }
+
+    const adjustedTime = `${String(adjustedHour).padStart(2, "0")}:00`;
     setDate(currentDate);
+    setTime(adjustedTime);
   }, []);
 
   const handleSubmit = (e) => {
@@ -41,6 +54,8 @@ function Reservation() {
     const newErrors = {};
     const nameRegex = /^[a-zA-Z\s]{3,}$/;
     const phoneRegex = /^[0-9]{10,12}$/;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
     if (!name) {
       newErrors.name = "Name is required";
     } else if (!nameRegex.test(name)) {
@@ -51,6 +66,12 @@ function Reservation() {
       newErrors.phone = "Phone number is required";
     } else if (!phoneRegex.test(phone)) {
       newErrors.phone = "Phone number must be between 10 and 12 digits";
+    }
+
+    if (!email) {
+      newErrors.email = "Email is required";
+    } else if (!emailRegex.test(email)) {
+      newErrors.email = "Invalid email address";
     }
 
     if (!date) newErrors.date = "Date is required";
@@ -69,13 +90,14 @@ function Reservation() {
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
     } else {
-      const formData = { name, phone, date, time, people, location };
+      const formData = { name, phone, email, date, time, people, location };
       const isSubmitted = submitAPI(formData);
       if (isSubmitted) {
         setErrors({});
         setSuccess(true);
         setName("");
         setPhone("");
+        setEmail("");
         setDate("");
         setTime("");
         setPeople("");
@@ -97,7 +119,7 @@ function Reservation() {
       {success ? (
         <div className="confirmation">
           <p className="success-message">
-            Reservation confirmed! A confirmation email has been sent.
+            Reservation confirmed! <br /> A confirmation email has been sent.
           </p>
           <Link to="/" className="button-primary center-button">
             Go to Home
@@ -130,6 +152,19 @@ function Reservation() {
               aria-label="Phone Number"
             />
             {errors.phone && <span className="error-message">{errors.phone}</span>}
+          </div>
+          <div className="form-group">
+            <label htmlFor="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="e.g. mike@example.com"
+              className={errors.email ? "error" : ""}
+              aria-label="Email"
+            />
+            {errors.email && <span className="error-message">{errors.email}</span>}
           </div>
           <div className="form-group" onClick={() => dateInputRef.current.focus()}>
             <label htmlFor="date">Date</label>
