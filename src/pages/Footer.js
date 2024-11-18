@@ -40,8 +40,8 @@ function Footer() {
               </Link>
             </li>
             <li>
-              <Link smooth to="/#contact">
-                Contact
+              <Link smooth to="/#orderonline">
+                Order Online
               </Link>
             </li>
           </ul>

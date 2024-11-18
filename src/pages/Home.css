@@ -1,5 +1,5 @@
 .home {
-  margin-top: 80px;
+  margin-top: 60px;
   padding: 35px;
   background-color: #495e57;
 }
@@ -17,14 +17,19 @@
 }
 
 .home-text h1 {
-  font-size: 2.5rem;
+  font-family: "Markazi Text", serif;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 1.1;
   color: #f4ce14;
   margin-bottom: 0.1rem;
 }
 
 .home-text h2 {
+  font-family: "Markazi Text", serif;
+  font-weight: 400;
+  font-size: 40px;
   color: #ffffff;
-  font-size: 2.25rem;
   height: 2.25rem;
 }
 

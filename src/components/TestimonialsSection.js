@@ -10,7 +10,7 @@ function TestimonialsSection() {
   return (
     <section className="testimonials-section">
       <div className="container grid">
-        <h2>Testimonials</h2>
+        <h2>What our customer say</h2>
       </div>
       <div className="testimonials-cards-container">
         <TestimonialsCard

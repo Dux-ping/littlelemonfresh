@@ -15,10 +15,10 @@ html {
 }
 
 body {
-  font-family: Karla, sans-serif;
-  font-size: 1rem;
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
   line-height: 1.5;
-  color: #495e57;
+  color: #333;
 }
 
 header {
@@ -42,9 +42,10 @@ a {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   line-height: 1;
-  font-family: "Markazi Text";
+  font-family: "Karla", sans-serif;
   font-weight: normal;
 }
 
@@ -104,17 +105,16 @@ img {
 }
 
 .button-primary {
-  padding: 0.5rem 1rem;
+  font-family: "Montserrat", sans-serif;
+  padding: 0.3rem 1.5rem;
   border-radius: 2rem;
   background-color: #f4ce14;
   color: #495e57;
   font-weight: bold;
-  border: 2px solid #f4ce14;
 }
 
 .button-primary:hover,
 .button-primary:focus {
   background-color: #495e57;
-  border-color: #495e57;
-  color: #ffffff;
+  color: white;
 }

@@ -1,5 +1,5 @@
 .dish-card {
-  background-color: #f8f8f8;
+  background-color: #f1f1f1;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -26,12 +26,20 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  font-family: "Karla", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  text-transform: uppercase;
 }
 
 .dish-header h3 {
+  font-family: "Karla", sans-serif;
+  font-weight: 700; /* Bold */
+  font-size: 16px; /* Dimensiunea categoriei */
   font-size: 1.25rem;
   font-weight: bold;
   color: #333;
+  text-transform: none; /* Dezactivează orice formatare automată */
 }
 
 .dish-header span {
@@ -42,6 +50,7 @@
 
 .dish-footer {
   padding: 20px;
+  margin-top: auto;
 }
 
 .dish-footer p {
@@ -55,15 +64,17 @@
   background-color: #f4ce14;
   color: #333;
   border: none;
-  padding: 10px;
+  padding: 5px;
   border-radius: 8px;
-  font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 100px;
+  gap: 80px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-family: "Karla", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
 }
 
 .dish-footer a:hover {

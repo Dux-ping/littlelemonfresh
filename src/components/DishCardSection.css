@@ -9,10 +9,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  line-height: 1.5;
 }
 
 .dish-card-section h2 {
-  font-size: 2rem;
+  font-family: "Markazi Text", serif !important;
+  font-weight: 500;
+  font-size: 46px;
   color: #333;
   margin: 0;
 }
@@ -20,6 +23,9 @@
 .dish-cards-container p {
   min-height: 100px;
   margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .dish-card img {
@@ -50,7 +56,11 @@
   }
 
   .dish-card-section h2 {
-    font-size: 1.5rem; /* Font mai mic pentru titlu */
+    font-family: "Markazi Text", serif !important;
+    font-weight: 500;
+    font-size: 46px;
+    color: #333;
+    margin: 0;
     text-align: center;
   }
 }

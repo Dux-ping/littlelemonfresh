@@ -10,9 +10,9 @@ const DishCardSection = () => {
   return (
     <section className="dish-card-section grid">
       <div className="title-container">
-        <h2>This week specials!</h2>
-        <HashLink className="button-primary" tp="/#menu">
-          Oline menu
+        <h2>This week specials</h2>
+        <HashLink className="button-primary" to="/#menu">
+          Menu
         </HashLink>
       </div>
       <div className="dish-cards-container">

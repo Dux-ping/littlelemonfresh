@@ -47,9 +47,9 @@ function Navbar() {
             Reservation
           </Link>
         </li>
-        <li className="nav-item">
-          <Link smooth to="/#contact" onClick={closeMenu}>
-            Contact
+        <li className="nav-item ">
+          <Link smooth to="/#orderonline" className="order-online" onClick={closeMenu}>
+            Order Online
           </Link>
         </li>
       </ul>
