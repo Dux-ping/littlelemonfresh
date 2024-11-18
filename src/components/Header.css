@@ -17,24 +17,6 @@
   max-width: 200px;
 }
 
-/* Media Queries for Tablet */
-@media (max-width: 768px) {
-  .header {
-    align-items: center;
-    padding: 15px;
-  }
-
-  .header-container {
-    margin: 0 20px;
-  }
-
-  .logo {
-    max-width: 150px;
-    margin-bottom: 10px;
-  }
-}
-
-/* Media Queries for Mobile */
 @media (max-width: 480px) {
   .header {
     padding: 10px;

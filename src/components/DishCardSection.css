@@ -49,10 +49,10 @@
 
   .dish-cards-container {
     display: flex;
-    flex-direction: column; /* Aranjează cardurile pe o singură coloană */
+    flex-direction: column;
     align-items: center;
-    gap: 20px; /* Spațiu între carduri */
-    margin-top: 20px; /* Adaugă spațiu de sus */
+    gap: 20px;
+    margin-top: 20px;
   }
 
   .dish-card-section h2 {

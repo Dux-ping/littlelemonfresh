@@ -32,7 +32,7 @@
 }
 
 .nav-item .order-online::after {
-  content: none !important; /* Asigură eliminarea completă a liniei */
+  content: none !important;
 }
 
 .nav-item a {
@@ -61,7 +61,6 @@
   width: 100%;
 }
 
-/* Show hamburger icon on mobile */
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
