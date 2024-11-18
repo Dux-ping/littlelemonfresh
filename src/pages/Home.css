@@ -1,5 +1,5 @@
 .home {
-  margin-top: 60px;
+  margin-top: 80px;
   padding: 35px;
   background-color: #495e57;
 }
@@ -68,6 +68,10 @@
 }
 
 @media (max-width: 480px) {
+  .home {
+    margin-top: 60px;
+  }
+
   .container.grid {
     display: flex;
     flex-direction: column;
