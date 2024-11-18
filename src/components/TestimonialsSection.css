@@ -1,7 +1,6 @@
 .testimonials-section {
   padding: 40px 20px;
   background-color: #495e57;
-  text-align: center;
 }
 
 .testimonials-section h2 {
@@ -13,6 +12,6 @@
 .testimonials-cards-container {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
   flex-wrap: wrap;
 }

@@ -16,7 +16,7 @@ const DishCard = ({ image, title, description, price }) => {
       <div className="dish-footer">
         <p>{description}</p>
         <HashLink to="/#">
-          Delivery <FontAwesomeIcon icon={faMotorcycle} />
+          Out for Delivery <FontAwesomeIcon icon={faMotorcycle} />
         </HashLink>
       </div>
     </article>

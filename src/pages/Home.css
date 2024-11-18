@@ -1,21 +1,19 @@
 .home {
-  display: flex;
-  justify-content: center;
   margin-top: 80px;
-  padding-top: 35px;
-  text-align: center;
+  padding: 35px;
   background-color: #495e57;
 }
 
-.home .container {
-  gap: 3.5rem;
+.container.grid {
+  display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 20px;
 }
 
 .home-text {
   grid-column: 1;
   text-align: left;
-  padding: 2rem;
 }
 
 .home-text h1 {
@@ -31,7 +29,7 @@
 }
 
 .home-text p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #ffffff;
   margin-top: 2rem;
 }
@@ -50,10 +48,11 @@
   grid-column: 2;
   width: 100%;
   height: 24rem;
-  margin-bottom: -2.3rem;
+  margin-bottom: -4rem;
   justify-self: end;
   border-radius: 1rem;
   object-fit: cover;
+  max-width: 500px;
 }
 
 .dish-cards-container {
@@ -61,4 +60,31 @@
   justify-content: center;
   gap: 20px;
   margin-top: 40px;
+}
+
+@media (max-width: 480px) {
+  .container.grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .home-text {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+  .home-image {
+    width: 95%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .home-text .button-primary {
+    margin: 20px auto;
+    text-align: center;
+  }
 }

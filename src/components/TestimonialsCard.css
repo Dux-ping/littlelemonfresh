@@ -3,13 +3,13 @@
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  max-width: 300px;
+  max-width: 220px;
   display: flex;
   flex-direction: column;
   transition: transform 0.2s ease-in-out;
   text-align: center;
   margin: 10px;
-  padding: 20px;
+  padding: 10px;
 }
 
 .testimonials-card:hover {
@@ -36,7 +36,8 @@
 }
 
 .testimonials-content {
-  padding: 20px;
+  padding: 10px;
+  text-align: center;
 }
 
 .testimonials-name {
@@ -44,6 +45,7 @@
   font-weight: bold;
   color: #333;
   margin-bottom: 10px;
+  margin-top: -10px;
 }
 
 .testimonials-rating {

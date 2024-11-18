@@ -1,7 +1,8 @@
 .dish-card-section {
-  display: flex;
+  display: grid;
   justify-content: center;
   padding-top: 5rem;
+  margin-bottom: 2rem;
 }
 
 .title-container {
@@ -25,5 +26,31 @@
   width: 100%;
   height: 200px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 8px 8px 0 0;
+}
+
+@media (max-width: 480px) {
+  .dish-card-section {
+    padding-top: 2rem;
+  }
+
+  .title-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .dish-cards-container {
+    display: flex;
+    flex-direction: column; /* Aranjează cardurile pe o singură coloană */
+    align-items: center;
+    gap: 20px; /* Spațiu între carduri */
+    margin-top: 20px; /* Adaugă spațiu de sus */
+  }
+
+  .dish-card-section h2 {
+    font-size: 1.5rem; /* Font mai mic pentru titlu */
+    text-align: center;
+  }
 }
